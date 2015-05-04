@@ -11,3 +11,16 @@ h1
 {
 	color: rgb(255, 180, 0);
 }
+
+ul
+{
+	list-style-type: none;
+}
+
+p
+{
+	border: 1px black solid; 
+	margin-bottom: 6px;
+	padding-top: 6px;
+	padding: 6px;
+}
