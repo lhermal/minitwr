@@ -17,7 +17,7 @@ ul
 	list-style-type: none;
 }
 
-p
+li
 {
 	border: 1px black solid; 
 	margin-bottom: 6px;

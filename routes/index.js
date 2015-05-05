@@ -5,7 +5,7 @@ var tweets = [];
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express', tweets: tweets });
+  res.render('index', { title: 'miniTwr', tweets: tweets });
 });
 
 router.post('/', function(req, res, next) {
