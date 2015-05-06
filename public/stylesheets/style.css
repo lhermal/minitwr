@@ -8,26 +8,39 @@ a {
   color: #00B7FF;
 }
 
-h1
-{
+h1 {
 	color: rgb(255, 180, 0);
 }
 
-ul
-{
+ul {
 	list-style-type: none;
 }
 
-li
-{
+.tweet {
 	border: 1px black solid; 
 	margin-bottom: 6px;
 	margin-left: -38px;
 	padding: 6px;
 }
 
+.logo {
+	max-width:10%;
+}
 
-.chat
-{
-	text-align: center;
+.baniere {
+	
+	min-width:100%;
+	height:200px;
+	overflow:hidden;
+
+}
+
+.octocat{
+	float:right;
+}
+
+footer {
+	display:inline-block;
+	vertical-align:top;
+	
 }

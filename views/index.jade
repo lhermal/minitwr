@@ -1,6 +1,39 @@
 extends layout
 
 block content
+
+
+
+
+  form(method="post" action="traitement.php")
+    p 
+      img(src="/images/miniTwr.png" alt="logo du site" class="logo")
+      label(for="pseudo") Pseudo :
+      input(type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo...")
+      label(for="pwd") Mot de Passe :
+      input(type="password" name="pwd" id="pwd")
+      input(type="submit" value="Connexion")
+      a(href="enregistrer" class="enregistrer") S'enregistrer
+      a(href="deconnexion" class="deconnexion") Deconnexion
+
+
+
+  p
+    img(src="/images/baniere.jpg" alt="Banière du site" class="baniere")
+
+
+  ul
+    li 
+      a(href="accueil" class="accueil") Accueil 
+    li 
+      a(href="profil" class="accueil") Profil
+    li 
+      a(href="https://octodex.github.com" class="octodex") Octodex
+    li 
+      a(href="octochat" class="chat") Octochat
+
+
+
   h1= title
   p 
   form(action='/', method='POST')
@@ -10,8 +43,19 @@ block content
 
   ul
     - each tweet in tweets
-      li= tweet
+      li(class="tweet")= tweet
 
 
-  a(href="octochat" class="chat") chat
+  footer
+    p
+      ul
+        li Copyright : NOM Michel
+        li Copyright : PERROT Denis
+        li Copyright : HERMAL Ludovic
+
+      a(href="mailto:contact@miniTwr.fr" class="contact") Contactez-nous !
+      a(href="mailto:support@miniTwr.fr" class="support") Support
+  img(src="/images/Aquicon-Github.png" class="octocat")
+
+
 
