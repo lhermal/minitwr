@@ -21,7 +21,7 @@ block content
   p
     img(src="/images/baniere.jpg" alt="Banière du site" class="baniere")
 
-  nav
+  nav(class="sticky")
     ul(class="menu")
       li 
         a(href="accueil" class="accueil") Accueil 
@@ -46,7 +46,7 @@ block content
         li(class="tweet")= tweet
 
 
-  section(class="secDroite")
+  section(id="secDroite" class="sticky")
     p Utilisateurs en ligne
 
   footer
@@ -60,5 +60,6 @@ block content
       a(href="mailto:support@miniTwr.fr" class="support") Support
     img(src="/images/Aquicon-Github.png" class="octocat")
 
-
+  script(src="jquery-1.7.1.min.js" type="text/javascript")
+  script(src="sticky.js" type="text/javascript")
 
