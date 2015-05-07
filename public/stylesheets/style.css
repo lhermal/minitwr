@@ -2,8 +2,6 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-
-
 a {
   color: #00B7FF;
 }
@@ -14,6 +12,10 @@ h1 {
 
 ul {
 	list-style-type: none;
+}
+
+.menu {
+	margin-left:-40px;
 }
 
 .tweet {
@@ -35,12 +37,45 @@ ul {
 
 }
 
-.octocat{
-	float:right;
+
+
+header {
+	border:2px black solid;
 }
 
-footer {
+nav {
+	box-sizing: border-box;
+	border:2px black solid;
+	display:inline-block;
+	text-align:center;
+	width:14%;
+	vertical-align:top;
+	min-height:300px;
+}
+
+.secTweet {
+	box-sizing: border-box;
+	margin-left:1%;
+	width:60%;
+	border:2px black solid;
 	display:inline-block;
 	vertical-align:top;
+}
+
+.secDroite {
+	text-align:center;
+	box-sizing: border-box;
+	margin-left:1%;
+	width:24%;
+	border:2px black solid;
+	display:inline-block;
+	vertical-align:top;
+	min-height:300px;
+}
+
+footer {box-sizing: border-box;
+	border:2px black solid;
+	display:inline-block;
+	min-width:100%;
 	
 }
