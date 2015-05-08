@@ -1,5 +1,6 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color:grey;
 }
 
 a {
@@ -46,31 +47,30 @@ header {
 nav {
 	box-sizing: border-box;
 	border:2px black solid;
-	display:inline-block;
+	float:left;
 	text-align:center;
 	width:14%;
-	vertical-align:top;
+	margin-bottom:1%;
 	min-height:300px;
 }
 
 .secTweet {
 	box-sizing: border-box;
-	margin-left:1%;
+	margin-left:15%;
 	width:60%;
 	border:2px black solid;
-	display:inline-block;
-	vertical-align:top;
+	margin-bottom:1%;
+	
 }
 
 #secDroite {
 	text-align:center;
 	box-sizing: border-box;
-	margin-left:1%;
 	width:24%;
 	border:2px black solid;
-	display:inline-block;
-	vertical-align:top;
+	float:right;
 	min-height:300px;
+	margin-bottom:1%;
 }
 
 footer {box-sizing: border-box;

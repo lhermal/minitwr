@@ -10,11 +10,11 @@ $(function(){ // document ready
 
 		      if (stickyTop < windowTop){
 		        $('.sticky').css({ position: 'fixed', top: 0 });
+		        $('#secDroite').css({ right: 5 });
 		      }
 		      else {
 		        $('.sticky').css('position','static');
 		      }
-
 		    });
 
 		  }
