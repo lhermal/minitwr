@@ -29,7 +29,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
-app.get('/octochat', site.homePage);
+app.get('/octochat', site.chat);
+app.get('/profil', site.profil);
+app.get('/option', site.option);
+app.get('/enregistrement', site.enregistrement);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

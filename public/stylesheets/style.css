@@ -72,6 +72,10 @@ nav {
 	min-height:300px;
 	margin-bottom:1%;
 }
+.octocat{
+	float:right;
+}
+
 
 footer {box-sizing: border-box;
 	border:2px black solid;
