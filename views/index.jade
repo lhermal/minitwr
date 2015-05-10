@@ -11,7 +11,7 @@ block content
         label(for="pseudo") Pseudo :
         input(type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo...")
         label(for="pwd") Mot de Passe :
-        input(type="password" name="pwd" id="pwd")
+        input(type="password" name="pwd" id="pwd" placeholder="Votre mot de passe...")
         input(type="submit" value="Connexion")
         a(href="enregistrement" class="enregistrer") "S'enregistrer"
         a(href="deconnexion" class="deconnexion") Deconnexion
@@ -45,8 +45,8 @@ block content
     h1= title
     p 
     form(action='/', method='POST')
-      textarea(name="tweet", rows=3, columns=50)
-      input(type='submit', content='Sends')
+      textarea(name="tweet", rows=3, columns=50, class="zoneSaisie")
+      input(type='submit', content='Sends', value='Envoyer')
 
 
     ul
