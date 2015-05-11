@@ -1,12 +1,12 @@
-$(function(){ // document ready
+$(function(){ 
 
-		  if (!!$('.sticky').offset()) { // make sure ".sticky" element exists
+		  if (!!$('.sticky').offset()) { //check si il y a un .sticky
 
-		    var stickyTop = $('.sticky').offset().top; // returns number 
+		    var stickyTop = $('.sticky').offset().top; 
 
-		    $(window).scroll(function(){ // scroll event
+		    $(window).scroll(function(){ 
 
-		      var windowTop = $(window).scrollTop(); // returns number 
+		      var windowTop = $(window).scrollTop();
 
 		      if (stickyTop < windowTop){
 		        $('.sticky').css({ position: 'fixed', top: 0 });

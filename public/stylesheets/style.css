@@ -3,15 +3,15 @@ body {
   background-color:grey;
 }
 
+
 a {
   color: #00B7FF;
 }
 
-
-
 ul {
 	list-style-type: none;
 }
+
 
 .menu {
 	margin-left:-40px;
@@ -23,11 +23,17 @@ ul {
 	width:42%;
 }
 
+.utilisateurs {
+	margin-left: -20px;
+	margin-right:17px;
+}
+
 
 .tweet {
 	border: 1px black solid; 
 	margin-bottom: 6px;
 	margin-left: -20px;
+	margin-right:17px;
 	padding: 6px;
 	overflow:hidden;
 	word-wrap:break-word;
@@ -35,6 +41,7 @@ ul {
 
 .logo {
 	max-width:10%;
+
 }
 
 #baniere {
@@ -45,10 +52,16 @@ ul {
 
 }
 
-
-
 header {
 	border:2px black solid;
+	background-color:rgb(191,191,191);
+}
+
+aside {
+	position:absolute;
+	top: 31px;
+	right:25px;
+
 }
 
 nav {
@@ -59,6 +72,7 @@ nav {
 	width:14%;
 	margin-bottom:1%;
 	min-height:300px;
+	background-color:rgb(191,191,191);
 }
 
 .secTweet {
@@ -68,7 +82,7 @@ nav {
 	width:60%;
 	border:2px black solid;
 	margin-bottom:1%;
-	
+	background-color:rgb(191,191,191);
 }
 
 #secDroite {
@@ -79,15 +93,23 @@ nav {
 	float:right;
 	min-height:300px;
 	margin-bottom:1%;
+	background-color:rgb(191,191,191);
 }
+
+h2 {
+
+}
+
 .octocat{
 	float:right;
 }
 
 
-footer {box-sizing: border-box;
+footer {
+	box-sizing: border-box;
 	border:2px black solid;
 	display:inline-block;
 	min-width:100%;
+	background-color:rgb(191,191,191);
 	
 }

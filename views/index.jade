@@ -5,22 +5,26 @@ block content
 
 
   header
+  
+
     form(method="post" action="traitement.php")
-      p 
+      p
         img(src="/images/miniTwr.png" alt="logo du site" class="logo")
-        label(for="pseudo") Pseudo :
-        input(type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo...")
-        label(for="pwd") Mot de Passe :
-        input(type="password" name="pwd" id="pwd" placeholder="Votre mot de passe...")
-        input(type="submit" value="Connexion")
-        a(href="enregistrement" class="enregistrer") "S'enregistrer"
-        a(href="deconnexion" class="deconnexion") Deconnexion
+        aside
+          label(for="pseudo") Pseudo :
+          input(type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo...")
+          label(for="pwd") Mot de Passe :
+          input(type="password" name="pwd" id="pwd" placeholder="Votre mot de passe...")
+          input(type="submit" value="Connexion")
+
 
 
 
 
   p
     img(src="/images/baniere.jpg" alt="Banière du site" id="baniere" class="static")
+
+
 
   nav(class="sticky")
     ul(class="menu")
@@ -36,8 +40,14 @@ block content
         a(href="option" class="option") Options
         
         
+        
+        
   section(id="secDroite" class="sticky")
-    p Utilisateurs en ligne
+    h2 Utilisateurs récents
+    ul
+      - each tweet in tweets
+        li(class="utilisateurs") #{tweet.username}
+
 
 
 
@@ -45,13 +55,14 @@ block content
     h1= title
     p 
     form(action='/', method='POST')
+      input(name="pseudo" type="text" placeholder="Votre pseudo...")
       textarea(name="tweet", rows=3, columns=50, class="zoneSaisie")
       input(type='submit', content='Sends', value='Envoyer')
 
-
     ul
       - each tweet in tweets
-        li(class="tweet")= tweet
+        li(class="tweet") #{tweet.username} - #{tweet.text}
+          
 
 
 
@@ -60,7 +71,7 @@ block content
     img(src="/images/Aquicon-Github.png" class="octocat")
     p
       ul
-        li Copyright : NOM Michel
+        li Copyright : HERRBACH Michel
         li Copyright : PERROT Denis
         li Copyright : HERMAL Ludovic
 
@@ -71,3 +82,4 @@ block content
   script(src="/javascripts/jquery-1.7.1.min.js" type="text/javascript")
   script(src="/javascripts/sticky.js" type="text/javascript")
 
+  
