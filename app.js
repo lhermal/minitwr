@@ -14,7 +14,8 @@ var app = express()
   , server = http.createServer(app)
   , io = require('socket.io').listen(server);
 
-
+// launch the http server on given port
+server.listen(5173);
 
 
 
@@ -71,7 +72,6 @@ app.use(function(err, req, res, next) {
 
 
 //partie socket chat
-
 
 
 // Indicate where static files are located. Without this, no external js file, no css...  

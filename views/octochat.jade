@@ -5,6 +5,7 @@ html
     link(rel='steelsheets' href='/stylesheets/styleChat.css')
 
   body
+      
     h1 Chat
     p Bienvenue sur le chat !
     
@@ -20,4 +21,18 @@ html
           a(href="octochat" class="chat") Octochat
         li
           a(href="option" class="option") Options
+
+    div
+      p USERS
+        div(id="users")
+    
+    div
+      div(id="conversation")
+        input(id="data" style="width:200px;")
+        input(type="button" id="datasend" value="send")
+
+  script(src="/socket.io/socket.io.js" type="text/javascript")
+  script(src="/javascripts/jquery-1.7.1.min.js" type="text/javascript")
+  script(src="/javascripts/chat.js" type="text/javascript")
+
 
