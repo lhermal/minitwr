@@ -9,7 +9,8 @@ block content
 
     form(method="post" action="traitement.php")
       p
-        img(src="/images/miniTwr.png" alt="logo du site" class="logo")
+        a(href="/" title="Accueil")
+          img(src="/images/miniTwr.png" alt="logo du site" class="logo")
         aside
           label(for="pseudo") Pseudo :
           input(type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo...")
@@ -53,11 +54,11 @@ block content
 
 
   section(class="secTweet")
-    h1= title
+    h1 Poster selon vos envie
     p 
     form(action='/', method='POST')
-      input(name="pseudo" type="text" placeholder="Votre pseudo...")
-      textarea(name="tweet", rows=3, columns=50, class="zoneSaisie")
+      input(name="pseudo" type="text" placeholder="Votre pseudo..." class="pseudo")
+      textarea(name="tweet", rows=3, columns=50, class="zoneSaisie" placeholder="Votre texte...")
       input(type='submit', content='Sends', value='Envoyer')
 
     ul
@@ -71,12 +72,12 @@ block content
   footer
     img(src="/images/Aquicon-Github.png" class="octocat")
     p
-      ul
-        li Copyright : HERRBACH Michel
-        li Copyright : PERROT Denis
-        li Copyright : HERMAL Ludovic
+      ul(class="copyright")
+        li  © Copyright : HERRBACH Michel
+        li  © Copyright : PERROT Denis
+        li  © Copyright : HERMAL Ludovic
 
-      a(href="mailto:contact@miniTwr.fr" class="contact") Contactez-nous !
+      a(href="mailto:contact@miniTwr.fr" class="contact") Contactez-nous  
       a(href="mailto:support@miniTwr.fr" class="support") Support
 
 

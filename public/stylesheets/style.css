@@ -12,13 +12,18 @@ ul {
 	list-style-type: none;
 }
 
+h1 {
+	margin-left:15px;
+}
 
 .menu {
 	margin-left:-40px;
 }
 
 .zoneSaisie {
-	margin-left:10%;
+	display:inlineblock;
+	vertical-align:top;
+	margin-left:3%;
 	height:70px;
 	width:42%;
 }
@@ -28,8 +33,13 @@ ul {
 	margin-right:17px;
 }
 
+.pseudo {
+	display:inlineblock;
+	vertical-align:top;
+}
 
 .tweet {
+
 	border: 1px black solid; 
 	margin-bottom: 6px;
 	margin-left: -20px;
@@ -45,11 +55,11 @@ ul {
 }
 
 #baniere {
-	
+	border:2px black solid;
 	min-width:100%;
 	height:200px;
 	overflow:hidden;
-
+	box-sizing: border-box;
 }
 
 header {
@@ -76,7 +86,7 @@ nav {
 }
 
 .secTweet {
-
+	padding-left:10px;
 	box-sizing: border-box;
 	margin-left:15%;
 	width:60%;
@@ -96,14 +106,31 @@ nav {
 	background-color:rgb(191,191,191);
 }
 
-h2 {
-
-}
 
 .octocat{
 	float:right;
 }
 
+.copyright {
+	float:left;
+	margin-top:2%;
+	margin-bottom:2%;
+	
+}
+
+.contact {
+
+	margin-left:15%;
+	position:relative;
+	top:35px;
+
+}
+
+.support {
+	margin-left:45%;
+	position:relative;
+	top:20px;
+}
 
 footer {
 	box-sizing: border-box;

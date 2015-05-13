@@ -1,0 +1,94 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color:grey;
+}
+
+
+a {
+  color: #00B7FF;
+}
+
+ul {
+	list-style-type: none;
+}
+
+h1 {
+	margin-left:15px;
+}
+
+header {
+	border:2px black solid;
+	background-color:rgb(191,191,191);
+}
+
+nav {
+	box-sizing: border-box;
+	border:2px black solid;
+	float:left;
+	text-align:center;
+	width:14%;
+	margin-bottom:1%;
+	min-height:300px;
+	background-color:rgb(191,191,191);
+}
+
+.secChat {
+	padding-left:10px;
+	box-sizing: border-box;
+	margin-left:15%;
+	width:60%;
+	border:2px black solid;
+	margin-bottom:1%;
+	background-color:rgb(191,191,191);
+}
+
+.zoneSaisie {
+	padding-left:10px;
+	box-sizing: border-box;
+	margin-left:15%;
+	width:60%;
+	border:2px black solid;
+	margin-bottom:1%;
+	background-color:rgb(191,191,191);
+}
+
+#secDroite {
+	text-align:center;
+	box-sizing: border-box;
+	width:24%;
+	border:2px black solid;
+	float:right;
+	min-height:300px;
+	margin-bottom:1%;
+	background-color:rgb(191,191,191);
+}
+
+.copyright {
+	float:left;
+	margin-top:2%;
+	margin-bottom:2%;
+	
+}
+
+.contact {
+
+	margin-left:15%;
+	position:relative;
+	top:35px;
+
+}
+
+.support {
+	margin-left:45%;
+	position:relative;
+	top:20px;
+}
+
+footer {
+	box-sizing: border-box;
+	border:2px black solid;
+	display:inline-block;
+	min-width:100%;
+	background-color:rgb(191,191,191);
+	
+}
