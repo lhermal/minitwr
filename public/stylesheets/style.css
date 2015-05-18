@@ -89,6 +89,18 @@ nav {
 	background-color:rgb(191,191,191);
 }
 
+nav li {
+	background-color:rgb(100,100,100);
+	border:2px black solid;
+	padding:10px;
+	margin-bottom:20px;
+	margin-left:10px;
+	margin-right:10px;
+}
+nav a {
+	color:white;
+}
+
 .secTweet {
 	padding-left:10px;
 	box-sizing: border-box;
@@ -154,8 +166,13 @@ footer {
 	.secret {
 		display:inline;
 		position:absolute;
-		top: 31px;
+		top: 15px;
 		right:25px;
+		background-color:rgb(100,100,100);
+		border:2px black solid;
+		padding:10px;
+		margin:2px;
+		color:white;
 	}
 
 	nav {
@@ -166,12 +183,7 @@ footer {
 		height:100px;
 		margin-bottom:1%;
 	}
-	nav a {
-		background-color:rgb(100,100,100);
-		border:2px black solid;
-		padding:10px;
-		margin:2px;
-	}
+
 
 	nav li {
 		display:inline;
