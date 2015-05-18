@@ -16,6 +16,10 @@ h1 {
 	margin-left:15px;
 }
 
+.secret {
+	display:none;
+}
+
 .menu {
 	margin-left:-40px;
 }
@@ -139,4 +143,50 @@ footer {
 	min-width:100%;
 	background-color:rgb(191,191,191);
 	
+}
+
+@media screen and (max-width: 700px)
+{
+	aside {
+		display:none;
+	}
+	
+	.secret {
+		display:inline;
+		position:absolute;
+		top: 31px;
+		right:25px;
+	}
+
+	nav {
+		float:none;
+		display:block;
+		width:100%;
+		min-height:50px;
+		height:100px;
+		margin-bottom:1%;
+	}
+	nav a {
+		background-color:rgb(100,100,100);
+		border:2px black solid;
+		padding:10px;
+		margin:2px;
+	}
+
+	nav li {
+		display:inline;
+	}
+	#baniere {
+		display:none;
+	}
+
+	#secDroite {
+		display:none;
+	}
+
+	.secTweet {
+		margin-left:0;
+		display:block;
+		width:100%;
+	}
 }
